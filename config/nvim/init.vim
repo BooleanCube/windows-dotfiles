@@ -169,17 +169,18 @@ if (empty($TMUX))
 endif
 
 
-"tokyonight
+"tokyonight vim color scheme
 set termguicolors
-
 let g:tokyonight_style = 'night' " available: night, storm
 " let g:tokyonight_enable_italic = 1
 
 
-
+"One vim color scheme
 " set background=dark " for the dark version
 " set background=light " for the light version
 " let g:one_allow_italics = 1 " I love italic for comments
+
+
 colorscheme tokyonight
 "desert
 "dracula
@@ -191,6 +192,7 @@ colorscheme tokyonight
 "zenburn
 "sourcerer
 "tokyonight
+
 
 set nu rnu " relative line numbering
 set clipboard=unnamed " public copy/paste register

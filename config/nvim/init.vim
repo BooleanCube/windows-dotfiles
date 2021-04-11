@@ -242,8 +242,8 @@ augroup END
 " NERDTree plugins
 " Start NERDTree when Vim opened and changes cursor to specified file if any
 
-" autocmd StdinReadPre * let s:std_in=1
-" autocmd VimEnter * NERDTree | if argc() > 0 || exists("s:std_in") | wincmd p | endif
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * NERDTree | if argc() > 0 || exists("s:std_in") | wincmd p | endif
 
 " prevent other buffers replacing NERDTree in its window
 

@@ -240,6 +240,7 @@ augroup compileandrun
     autocmd filetype c nnoremap <f5> :w <bar> !make %:r && ./%:r <cr>
     autocmd filetype java nnoremap <f5> :w <bar> !javac % && java %:r <cr>
 augroup END
+" I think this doesn't work with Java 11. I don't know why, but it used to work perfectly fine, but after Java 11, it stopped working. lmk if you know what the issue is.
 
 " NERDTree plugins
 " Start NERDTree when Vim opened and changes cursor to specified file if any

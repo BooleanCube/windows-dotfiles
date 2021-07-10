@@ -17,6 +17,8 @@ Plug 'OmniSharp/omnisharp-vim'
 Plug 'dense-analysis/ale'
 
 "UI Plugins
+Plug 'BooleanCube/zelk.vim'
+Plug 'bling/vim-bufferline'
 Plug 'mengelbrecht/lightline-bufferline'
 Plug 'ghifarit53/tokyonight-vim'
 Plug 'cocopon/iceberg.vim'
@@ -28,8 +30,7 @@ Plug 'itchyny/vim-gitbranch'
 Plug 'itchyny/lightline.vim'
 " Plug 'pablopunk/transparent.vim' " transparent bg
 " Plug 'vim-airline/vim-airline' " Status Line Plugin
-Plug 'vim-airline/vim-airline-themes'
-Plug 'bling/vim-bufferline'
+Plug 'vim-airline/vim-airline-themes's
 Plug 'altercation/vim-colors-solarized'
 Plug 'tomasr/molokai'
 Plug 'dracula/vim', { 'as': 'dracula' }
@@ -39,7 +40,7 @@ Plug 'ChristianChiarulli/nvcode-color-schemes.vim'
 " Plug 'hoob3rt/lualine.nvim'
 Plug 'ryanoasis/vim-devicons' " vimscript
 Plug 'kyazdani42/nvim-web-devicons'
-" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 "Editor plugins
 Plug 'neoclide/coc.nvim'
@@ -86,10 +87,10 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-noremap <silent> <C-Left> :vertical resize +3<CR>
-noremap <silent> <C-Right> :vertical resize -3<CR>
-noremap <silent> <C-Up> :resize +3<CR>
-noremap <silent> <C-Down> :resize -3<CR>
+noremap <silent> <C-Left> :vertical resize -3<CR>
+noremap <silent> <C-Right> :vertical resize +3<CR>
+noremap <silent> <C-Up> :resize -3<CR>
+noremap <silent> <C-Down> :resize +3<CR>
 
 set splitbelow
 set splitright
@@ -124,7 +125,7 @@ syntax on
 
 " lightline
 let g:lightline = {
-      \ 'colorscheme': 'tokyonight',
+      \ 'colorscheme': 'zelk',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
@@ -149,7 +150,6 @@ set showtabline=2
 highlight Comment cterm=italic gui=italic
 
 set laststatus=2
-" set showtabline=2
 
 "Credit joshdick
 "Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
@@ -181,7 +181,7 @@ let g:tokyonight_style = 'night' " available: night, storm
 " let g:one_allow_italics = 1 " I love italic for comments
 
 
-colorscheme tokyonight
+colorscheme zelk
 "desert
 "dracula
 "tlou2 (custom)
@@ -192,7 +192,6 @@ colorscheme tokyonight
 "zenburn
 "sourcerer
 "tokyonight
-
 
 set nu rnu " relative line numbering
 set clipboard=unnamed " public copy/paste register
@@ -238,9 +237,8 @@ augroup compileandrun
     autocmd filetype cpp nnoremap <f5> :w <bar> !g++ -std=c++11 % <cr> :vnew <bar> :te "a.exe" <cr><cr>
     autocmd filetype cpp nnoremap <f6> :vnew <bar> :te "a.exe" <cr>
     autocmd filetype c nnoremap <f5> :w <bar> !make %:r && ./%:r <cr>
-    autocmd filetype java nnoremap <f5> :w <bar> !javac % && java %:r <cr>
+    autocmd filetype java nnoremap <f5> :w <bar> :vnew <bar> :te java .expand('%') .java <cr>
 augroup END
-" I think this doesn't work with Java 11. I don't know why, but it used to work perfectly fine, but after Java 11, it stopped working. lmk if you know what the issue is.
 
 " NERDTree plugins
 " Start NERDTree when Vim opened and changes cursor to specified file if any

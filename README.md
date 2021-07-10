@@ -8,6 +8,7 @@ Nvim-Treesitter doesn't work on my neovim, please inform if you know the fix for
 
 I am currently using Alacritty, just because I thought it was the least bloated and since its gpu accelerated. It has worked amazingly, but if I can, I would like to use Hyper.js more often, just because it has a more aesthetic look. Hyper.js, however, is **VERY** buggy. If you can fix these bugs, please inform me how to.
 
+Use my [neovim theme](https://github.com/BooleanCube/zelk.vim)!
 
 ### This is how my Neovim looks:
 ![image](https://user-images.githubusercontent.com/47650058/125162929-aa920500-e158-11eb-813d-b9863108c894.png)

@@ -10,7 +10,7 @@ I am currently using Alacritty, just because I thought it was the least bloated 
 
 
 ### This is how my Neovim looks:
-![image](https://user-images.githubusercontent.com/47650058/117396660-69674580-aec8-11eb-9ac3-5047296e7a84.png)
+![image](https://user-images.githubusercontent.com/47650058/125162929-aa920500-e158-11eb-813d-b9863108c894.png)
 
 
 ### TODO

@@ -22,7 +22,6 @@ Plug 'bling/vim-bufferline'
 Plug 'mengelbrecht/lightline-bufferline'
 Plug 'ghifarit53/tokyonight-vim'
 Plug 'cocopon/iceberg.vim'
-Plug 'co1ncidence/mountaineer.vim'
 Plug 'xero/sourcerer.vim'
 Plug 'jnurmine/Zenburn'
 Plug 'tpope/vim-fugitive'
@@ -30,7 +29,7 @@ Plug 'itchyny/vim-gitbranch'
 Plug 'itchyny/lightline.vim'
 " Plug 'pablopunk/transparent.vim' " transparent bg
 " Plug 'vim-airline/vim-airline' " Status Line Plugin
-Plug 'vim-airline/vim-airline-themes's
+Plug 'vim-airline/vim-airline-themes'
 Plug 'altercation/vim-colors-solarized'
 Plug 'tomasr/molokai'
 Plug 'dracula/vim', { 'as': 'dracula' }
@@ -106,7 +105,7 @@ nnoremap <c-p> :Files<cr>
 
 " NERDTree Mappings
 nnoremap <leader>n :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-n> :NERDTree CP/<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>a
 
@@ -231,6 +230,7 @@ let g:syntastic_cpp_compiler_options = ' -std=c++11'
 
 
 " run code
+" if python files need input it will not work so temporarily just change input to a constant value and then test it
 augroup compileandrun
     autocmd!
     autocmd filetype python nnoremap <f5> :w <bar> :!py % <cr>
@@ -241,10 +241,8 @@ augroup compileandrun
 augroup END
 
 " NERDTree plugins
-" Start NERDTree when Vim opened and changes cursor to specified file if any
-
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * NERDTree | if argc() > 0 || exists("s:std_in") | wincmd p | endif
+" Start NERDTree and put the cursor back in the other window.
+" autocmd VimEnter * NERDTree | wincmd p
 
 " prevent other buffers replacing NERDTree in its window
 

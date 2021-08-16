@@ -15,7 +15,4 @@ Use my [neovim theme](https://github.com/BooleanCube/zelk.vim)!
 
 
 ### TODO
-- [X] FIX Nvim-treesitter
-- [ ] find leaks for YCM servers (or else start using coc.nvim again (slower))
-- [ ] figure out if its possible to remove title bar but still able to move the terminal around
 - [ ] fix running java code or find out why it is bugged

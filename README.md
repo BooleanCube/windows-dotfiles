@@ -11,7 +11,7 @@ I am currently using Alacritty, just because I thought it was the least bloated 
 Use my [neovim theme](https://github.com/BooleanCube/zelk.vim)!
 
 ### This is how my Neovim looks:
-![image](https://user-images.githubusercontent.com/47650058/125185028-3440e180-e1f0-11eb-92e6-560a9835dcd8.png)
+![image](https://user-images.githubusercontent.com/47650058/129553637-0faf9333-bcd1-4e93-80aa-f5d24c61083a.png)
 
 
 ### TODO

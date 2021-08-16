@@ -21,13 +21,12 @@ Plug 'BooleanCube/zelk.vim'
 Plug 'bling/vim-bufferline'
 Plug 'mengelbrecht/lightline-bufferline'
 Plug 'ghifarit53/tokyonight-vim'
-Plug 'cocopon/iceberg.vim'
 Plug 'xero/sourcerer.vim'
 Plug 'jnurmine/Zenburn'
 Plug 'tpope/vim-fugitive'
 Plug 'itchyny/vim-gitbranch'
 Plug 'itchyny/lightline.vim'
-" Plug 'pablopunk/transparent.vim' " transparent bg
+Plug 'pablopunk/transparent.vim' " transparent bg
 " Plug 'vim-airline/vim-airline' " Status Line Plugin
 Plug 'vim-airline/vim-airline-themes'
 Plug 'altercation/vim-colors-solarized'
@@ -46,9 +45,7 @@ Plug 'neoclide/coc.nvim'
 Plug 'sheerun/vim-polyglot'
 Plug 'Raimondi/delimitMate'
 Plug 'scrooloose/nerdcommenter'
-Plug 'tpope/vim-sleuth'
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clangd-completer --go-completer --rust-completer --ts-completer' }
-Plug 'rdnetto/ycm-generator', { 'branch': 'stable' }
+Plug 'tpope/vim-sleuth' 
 "Plug 'SirVer/ultisnips'
 "Plug 'ludovicchabant/vim-gutentags'
 Plug 'tpope/vim-fugitive'
@@ -58,21 +55,12 @@ Plug 'Chiel92/vim-autoformat'"}
 
 "Note taking
 Plug 'vimwiki/vimwiki'
-Plug 'lukaszkorecki/workflowish'
 
 "Languages
 Plug 'tmhedberg/SimpylFold', { 'for': 'python' }
 Plug 'lervag/vimtex', { 'for': 'tex' }
 Plug 'vim-pandoc/vim-pandoc'
 Plug 'vim-pandoc/vim-pandoc-syntax'
-Plug 'yuezk/vim-js'
-Plug 'HerringtonDarkholme/yats.vim'
-"Plug 'leafgarland/typescript-vim'
-Plug 'maxmellon/vim-jsx-pretty'
-Plug 'tikhomirov/vim-glsl'
-Plug 'ds26gte/scmindent'
-Plug 'udalov/kotlin-vim'
-
 call plug#end()
 
 filetype plugin on
@@ -122,6 +110,7 @@ set encoding=utf-8
 
 syntax on
 
+" \ 'colorscheme': 'zelk',
 " lightline
 let g:lightline = {
       \ 'colorscheme': 'zelk',

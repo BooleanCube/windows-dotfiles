@@ -17,6 +17,7 @@ Plug 'OmniSharp/omnisharp-vim'
 Plug 'dense-analysis/ale'
 
 "UI Plugins
+Plug 'BooleanCube/blurple.vim'
 Plug 'BooleanCube/zelk.vim'
 Plug 'bling/vim-bufferline'
 Plug 'mengelbrecht/lightline-bufferline'
@@ -26,7 +27,7 @@ Plug 'jnurmine/Zenburn'
 Plug 'tpope/vim-fugitive'
 Plug 'itchyny/vim-gitbranch'
 Plug 'itchyny/lightline.vim'
-Plug 'pablopunk/transparent.vim' " transparent bg
+" Plug 'pablopunk/transparent.vim' " transparent bg
 " Plug 'vim-airline/vim-airline' " Status Line Plugin
 Plug 'vim-airline/vim-airline-themes'
 Plug 'altercation/vim-colors-solarized'
@@ -169,7 +170,9 @@ let g:tokyonight_style = 'night' " available: night, storm
 " let g:one_allow_italics = 1 " I love italic for comments
 
 
-colorscheme zelk
+colorscheme blurple
+"zelk
+"lunar
 "desert
 "dracula
 "tlou2 (custom)

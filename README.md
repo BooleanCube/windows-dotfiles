@@ -13,7 +13,7 @@ Application Configurations:
 ![image](https://user-images.githubusercontent.com/47650058/130113426-72a7d701-aeb2-4faf-b256-f69430d96975.png)
 
 ### Windows Terminal:
-![image](https://user-images.githubusercontent.com/47650058/130113478-48233570-6993-4ca6-bfa4-c005fa7989b3.png)
+![image](https://user-images.githubusercontent.com/47650058/130113605-0cb63ff7-7458-42c6-b7b3-6847c707cf61.png)
 
 ### Neovim:
 ![image](https://user-images.githubusercontent.com/47650058/130100668-a94ef296-c1e8-4519-871c-b1a1e51ca9f8.png)

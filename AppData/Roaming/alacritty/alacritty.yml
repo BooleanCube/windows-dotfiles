@@ -1,0 +1,48 @@
+background_opacity: 0.7
+font:
+    normal:
+        # family: Sarasa Mono TC
+        family: FiraCode NF
+        style: Regular
+    bold:
+        family: FiraCode NF
+        style: Bold
+    italic:
+        family: FiraCode NF
+        style: Italic
+    size:
+        12
+scrolling:
+    history: 10000
+    multiplier: 2
+mouse:
+    hide_when_typing: true
+draw_bold_text_with_bright_colors: true
+key_bindings:
+    - { key: V,        mods: Control|Shift, action: Paste            }
+    - { key: C,        mods: Control|Shift, action: Copy             }
+    - { key: Insert,   mods: Shift,         action: PasteSelection   }
+    - { key: Key0,     mods: Control,       action: ResetFontSize    }
+    - { key: Equals,   mods: Control,       action: IncreaseFontSize }
+    - { key: Plus,      mods: Control,       action: IncreaseFontSize }
+    - { key: Minus,    mods: Control,       action: DecreaseFontSize }
+
+    - { key: Paste,                    action: Paste                            }
+    - { key: Copy,                     action: Copy                             }
+    - { key: L,         mods: Control, action: ClearLogNotice                   }
+    - { key: L,         mods: Control, chars: "\x0c"                            }
+    - { key: PageUp,    mods: Shift,   action: ScrollPageUp,   mode: ~Alt       }
+    - { key: PageDown,  mods: Shift,   action: ScrollPageDown, mode: ~Alt       }
+    - { key: Home,      mods: Shift,   action: ScrollToTop,    mode: ~Alt       }
+    - { key: End,       mods: Shift,   action: ScrollToBottom, mode: ~Alt       }
+window:
+    dimensions:
+        columns: 210
+        lines: 53
+    padding:
+        x: 0
+        y: 0
+    #decorations: full
+    decorations: none
+    title: Alacritty
+working_directory: C:/Users/boole/

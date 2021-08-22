@@ -36,13 +36,13 @@ key_bindings:
     - { key: Home,      mods: Shift,   action: ScrollToTop,    mode: ~Alt       }
     - { key: End,       mods: Shift,   action: ScrollToBottom, mode: ~Alt       }
 window:
-    dimensions:
-        columns: 210
-        lines: 53
+    #dimensions:
+        #columns: 210
+        #lines: 53
     padding:
         x: 0
         y: 0
-    #decorations: full
-    decorations: none
+    #decorations: none
+    decorations: full
     title: Alacritty
 working_directory: C:/Users/boole/

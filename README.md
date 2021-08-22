@@ -1,15 +1,22 @@
 # dotfiles
 these are my dotfiles on windows for configurations i have.
 
+## Information
 - The folder `AppData` can be found under the `C:\Users\username\` directory (in my case my username is boole so it would be - `C:\Users\boole\AppData\...\`). In this directory, you can find my configurations for applications like the terminals and neovim, etc.
 - The folder `Pictures` can be found under the `C:\Users\username\` directory (in my case my username is boole so it would be - `C:\Users\boole\Pictures\...\`). In this directory, you can find pictures and images of anything I have saved.
-- I use [TaskbarX](https://chrisandriessen.nl/taskbarx) to configure my Windows taskbar. The configuration for my taskbar can be found [here](https://user-images.githubusercontent.com/47650058/130356726-98ba157a-369a-4956-8d42-b63cfec400c4.png) <br>
+- Configured Stuff in this repository:
+  - Neovim
+  - Alacritty
+  - Windows Terminal (Linux Subsystem)
+  - Windows OS
 
-## Configurated Applications in this repository:
-- Neovim
-- Alacritty
-- Windows Terminal (Linux Subsystem)
-- Windows OS
+## Other Configurations
+- I use [TaskbarX](https://chrisandriessen.nl/taskbarx) to configure my Windows taskbar. The configuration for my taskbar can be found [here](https://user-images.githubusercontent.com/47650058/130356726-98ba157a-369a-4956-8d42-b63cfec400c4.png) <br>
+- I use [Power Toys](https://github.com/microsoft/PowerToys/releases/tag/v0.43.0) which is a really helpful tool with many utilities. I recommend you check out all of what it offers. The main 3 tools I use in PowerToys are:
+  - FancyZones - Window Tile Manager
+  - Power Toys Run - Quick Search (like Cortana)
+  - File Explorer Add-ons - File Previews
+- 
 
 ## Preview:
 ### Alacritty:

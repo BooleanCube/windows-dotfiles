@@ -22,6 +22,11 @@ these are my dotfiles on windows for configurations i have.
 ![image](https://user-images.githubusercontent.com/47650058/130100668-a94ef296-c1e8-4519-871c-b1a1e51ca9f8.png)
 ![image](https://user-images.githubusercontent.com/47650058/130100589-c3adeea0-a998-4057-9dd0-1b193da88195.png)
 
+### Windows OS:
+![image](https://user-images.githubusercontent.com/47650058/130356662-eee1aa05-51da-4cc1-a510-42b649efc76f.png)
+![image](https://user-images.githubusercontent.com/47650058/130356636-153d2a59-445b-43d2-9f4f-216e00504106.png)
+
+
 ----
 
 #### TODO

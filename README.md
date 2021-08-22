@@ -27,5 +27,3 @@ these are my dotfiles on windows for configurations i have.
 #### TODO
 - [ ] Fix running java code in neovim
 - [ ] Add DAPs and DAP UI in neovim
-- [ ] Add windows theme configuration
-- [ ] Add wallpapers

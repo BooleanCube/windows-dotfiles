@@ -16,7 +16,7 @@ For your information, you can find [other themes](https://vsthemes.org/en/themes
 
 5. The theme should automatically start working without another restart required.
 
-## Resuslt
+## Result
 ![image](https://user-images.githubusercontent.com/47650058/130339586-87855bd6-f8e0-4ec7-bf19-9de574520590.png)
 
 

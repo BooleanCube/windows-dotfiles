@@ -37,5 +37,5 @@ these are my dotfiles on windows for configurations i have.
 ----
 
 #### TODO
-- [ ] Fix running java code in neovim
+- [ ] Fix running code shortcut (f5) in neovim
 - [ ] Add DAPs and DAP UI in neovim

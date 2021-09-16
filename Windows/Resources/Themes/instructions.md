@@ -20,4 +20,4 @@ For your information, you can find [other themes](https://vsthemes.org/en/themes
 ![image](https://user-images.githubusercontent.com/47650058/130339586-87855bd6-f8e0-4ec7-bf19-9de574520590.png)
 
 
-[something wrong? check this](https://vsthemes.org/en/qa/206-install-themes-for-windows-10.html)
+something wrong? check [this](https://vsthemes.org/en/qa/206-install-themes-for-windows-10.html)

@@ -1,5 +1,6 @@
 # dotfiles
-these are my dotfiles on windows for configurations i have.
+These are my dotfiles on windows for configurations i have.
+I also have a ton of other configurations in here.
 
 ## Information
 - The folder `AppData` can be found under the `C:\Users\username\` directory (in my case my username is boole so it would be - `C:\Users\boole\AppData\...\`). In this directory, you can find my configurations for applications like the terminals and neovim, etc.
@@ -16,7 +17,6 @@ these are my dotfiles on windows for configurations i have.
   - FancyZones - Window Tile Manager
   - Power Toys Run - Quick Search (like Cortana)
   - File Explorer Add-ons - File Previews
-- 
 
 ## Preview:
 ### Alacritty:

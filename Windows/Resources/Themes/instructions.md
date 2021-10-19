@@ -17,7 +17,7 @@ For your information, you can find [other themes](https://vsthemes.org/en/themes
 5. The theme should automatically start working without another restart required.
 
 ## Result
-![image](https://user-images.githubusercontent.com/47650058/130339586-87855bd6-f8e0-4ec7-bf19-9de574520590.png)
+![image](https://user-images.githubusercontent.com/47650058/137891833-8fa8c848-9ef8-4530-9ef4-db169c0e2696.png)
 
 
 something wrong? check [this](https://vsthemes.org/en/qa/206-install-themes-for-windows-10.html)

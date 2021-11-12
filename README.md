@@ -3,6 +3,7 @@ These are my dotfiles on windows for configurations i have.
 I also have a ton of other configurations in here.
 
 ## Information
+- The only real thing I am updating here is the init.vim file now. I am most definitely not updating the nvim-data folder with some of the plugins I directly configured.
 - The folder `AppData` can be found under the `C:\Users\username\` directory (in my case my username is boole so it would be - `C:\Users\boole\AppData\...\`). In this directory, you can find my configurations for applications like the terminals and neovim, etc.
 - The folder `Pictures` can be found under the `C:\Users\username\` directory (in my case my username is boole so it would be - `C:\Users\boole\Pictures\...\`). In this directory, you can find pictures and images of anything I have saved.
 - Configured Stuff in this repository:

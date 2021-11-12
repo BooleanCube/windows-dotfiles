@@ -40,3 +40,4 @@ I also have a ton of other configurations in here.
 #### TODO
 - [ ] Fix running code shortcut (f5) in neovim
 - [ ] Add DAPs and DAP UI in neovim
+- [ ] Adding LSP and Compe

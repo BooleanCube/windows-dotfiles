@@ -8,7 +8,7 @@ call plug#begin('~/AppData/Local/nvim-data/plugged')
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'rbgrouleff/bclose.vim'
-Plug 'kyazdani42/nvim-tree.lua'
+Plug 'BooleanCube/old-nvim-tree.lua'
 
 "Color Schemes
 Plug 'xero/sourcerer.vim'
@@ -17,20 +17,22 @@ Plug 'ChristianChiarulli/nvcode-color-schemes.vim'
 Plug 'kyazdani42/blue-moon'
 
 " UI
+Plug 'BurntSushi/ripgrep'
 Plug 'glepnir/dashboard-nvim'
 Plug 'bling/vim-bufferline'
 Plug 'mengelbrecht/lightline-bufferline'
 Plug 'itchyny/vim-gitbranch'
 Plug 'itchyny/lightline.vim'
-" Plug 'pablopunk/transparent.vim' " transparent bg
+Plug 'pablopunk/transparent.vim' " transparent bg
 " Plug 'vim-airline/vim-airline' " Status Line Plugin
 " Plug 'hoob3rt/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 "Editor plugins
-Plug 'sheerun/vim-polyglot'
 Plug 'Raimondi/delimitMate'
+
+"Intellisense and Completion
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 "Note taking
 Plug 'vimwiki/vimwiki'
@@ -38,10 +40,22 @@ Plug 'vimwiki/vimwiki'
 "Languages
 Plug 'tmhedberg/SimpylFold', { 'for': 'python' }
 Plug 'lervag/vimtex', { 'for': 'tex' }
-Plug 'vim-pandoc/vim-pandoc'
-Plug 'vim-pandoc/vim-pandoc-syntax'
+Plug 'uiiaoo/java-syntax.vim'
+Plug 'vim-jp/vim-cpp'
+Plug 'tpope/vim-git'
+Plug 'SirJson/fzf-gitignore'
+Plug 'othree/html5.vim'
+Plug 'pangloss/vim-javascript'
+Plug 'statico/vim-javascript-sql'
+Plug 'elzr/vim-json'
+Plug 'tbastos/vim-lua'
+Plug 'plasticboy/vim-markdown'
+Plug 'PProvost/vim-ps1'
+Plug 'vim-python/python-syntax'
 
-
+"Debugging
+Plug 'mfussenegger/nvim-dap'
+Plug 'rcarriga/nvim-dap-ui'
 
 call plug#end()
 
@@ -80,8 +94,8 @@ set foldlevel=99
 "Enable folding with the spacebar
 nnoremap <space> za
 
-" open files with ctrl-p
-nnoremap <c-p> :Files<cr>
+" open files with ctrl-p (nerdtree)
+" nnoremap <c-p> :Files<cr>
 
 
 au BufNewFile,BufRead *.py,*.java,*.cpp,*.c,*.cs,*.rkt,*.h,*.html
@@ -100,7 +114,7 @@ syntax on
 " \ 'colorscheme': 'zelk',
 " lightline
 let g:lightline = {
-      \ 'colorscheme': 'nord',
+      \ 'colorscheme': 'ayu_mirage',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
@@ -156,7 +170,7 @@ endif
 " let g:one_allow_italics = 1 " I love italic for comments
 
 set termguicolors
-colorscheme nord
+colorscheme aurora
 "zelk
 "lunar
 "desert
@@ -310,3 +324,15 @@ nnoremap <leader>n :NvimTreeFindFile<CR>
 
 " a list of groups can be found at `:help nvim_tree_highlight`
 highlight NvimTreeFolderIcon guibg=blue
+
+" Telescope Plugin Mappings
+nnoremap <C-f> :Telescope file_browser<CR>
+
+
+" Plugin Configurations
+source ~/AppData/Local/nvim-data/plug-config/coc.vim
+source ~/AppData/Local/nvim-data/plug-config/dashboardconfig.vim
+" source ~/AppData/Local/nvim-data/plug-config/lspconfig.vim
+" source ~/AppData/Local/nvim-data/plug-config/cmpconfig.vim
+" luafile ~/AppData/Local/nvim-data/plug-config/compeconfig.lua
+" luafile ~/AppData/Local/nvim-data/plug-config/lsphandlers.lua

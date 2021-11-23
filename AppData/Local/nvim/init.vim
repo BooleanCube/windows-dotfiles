@@ -11,6 +11,7 @@ Plug 'rbgrouleff/bclose.vim'
 Plug 'BooleanCube/old-nvim-tree.lua'
 
 "Color Schemes
+Plug 'AlessandroYorba/Alduin'
 Plug 'xero/sourcerer.vim'
 Plug 'jnurmine/Zenburn'
 Plug 'ChristianChiarulli/nvcode-color-schemes.vim'
@@ -30,6 +31,9 @@ Plug 'kyazdani42/nvim-web-devicons'
 
 "Editor plugins
 Plug 'Raimondi/delimitMate'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'tpope/vim-fugitive'
 
 "Intellisense and Completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -38,10 +42,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vimwiki/vimwiki'
 
 "Languages
-Plug 'tmhedberg/SimpylFold', { 'for': 'python' }
 Plug 'lervag/vimtex', { 'for': 'tex' }
 Plug 'uiiaoo/java-syntax.vim'
-Plug 'vim-jp/vim-cpp'
+Plug 'bfrg/vim-cpp-modern'
 Plug 'tpope/vim-git'
 Plug 'SirJson/fzf-gitignore'
 Plug 'othree/html5.vim'
@@ -51,7 +54,7 @@ Plug 'elzr/vim-json'
 Plug 'tbastos/vim-lua'
 Plug 'plasticboy/vim-markdown'
 Plug 'PProvost/vim-ps1'
-Plug 'vim-python/python-syntax'
+Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins' }
 
 "Debugging
 Plug 'mfussenegger/nvim-dap'
@@ -80,8 +83,8 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-noremap <silent> <C-Left> :vertical resize -3<CR>
-noremap <silent> <C-Right> :vertical resize +3<CR>
+noremap <silent> <C-Left> :vertical resize +3<CR>
+noremap <silent> <C-Right> :vertical resize -3<CR>
 noremap <silent> <C-Up> :resize +3<CR>
 noremap <silent> <C-Down> :resize -3<CR>
 
@@ -171,6 +174,7 @@ endif
 
 set termguicolors
 colorscheme aurora
+"alduin
 "zelk
 "lunar
 "desert
@@ -219,6 +223,11 @@ nnoremap <buffer> <localleader>w :set wrap!<cr>
 let g:syntastic_cpp_compiler = 'clang++'
 let g:syntastic_cpp_compiler_options = ' -std=c++11'
 
+function MyCustomHighlights()
+    hi semshiBuiltin      ctermfg=yellow guifg=#ffaf00
+    hi semshiGlobal       ctermfg=blue   guifg=#5fafff
+endfunction
+autocmd FileType python call MyCustomHighlights()
 
 " run code
 " if python files need input it will not work so temporarily just change input to a constant value and then test it
@@ -228,7 +237,7 @@ augroup compileandrun
     autocmd filetype cpp nnoremap <f5> :w <bar> !g++ -std=c++11 % <cr> :vnew <bar> :te "a.exe" <cr><cr>
     autocmd filetype cpp nnoremap <f6> :vnew <bar> :te "a.exe" <cr>
     autocmd filetype c nnoremap <f5> :w <bar> !make %:r && ./%:r <cr>
-    autocmd filetype java nnoremap <f5> :w <bar> !javac % && java %:r <cr>
+    autocmd filetype java nnoremap <f5> :w <bar> !java %:r <cr>
 augroup END
 
 "____________________________
